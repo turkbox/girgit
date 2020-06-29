@@ -9,10 +9,16 @@ const initialState = {
   },
   modalDisplayComponent: null,
 };
+
 const store = createContext(initialState);
 const { Provider } = store;
 
-const StateProvider = ({ children }) => {
+
+const StateProvider = ({ params, children }) => {
+
+
+  console.log("Ideal modified state", {...initialState, params});
+
   const [state, dispatch] = useReducer((state, action) => {
 
     switch (action.type) {
@@ -74,7 +80,7 @@ const StateProvider = ({ children }) => {
       default:
         throw new Error();
     }
-  }, initialState);
+  }, {...initialState, ...params});
 
   return <Provider value={{ state, dispatch }}>{children}</Provider>;
 };

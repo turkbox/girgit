@@ -11,5 +11,12 @@ export default {
   component: Login,
 };
 
-export const LoginPage = () => <StateProvider><Login/></StateProvider>;
+const errorParams = {
+  sessionData: {
+    error: {"message":"User with given email not found","type":"AuthFailure","code":401,"error_subcode":4010},
+  },
+};
 
+
+export const LoginPage = () => <StateProvider><Login/></StateProvider>;
+export const LoginPageWithError = () => <StateProvider params={errorParams}><Login/></StateProvider>;
