@@ -1,16 +1,16 @@
 import React, { useContext, useState } from "react";
-import { store } from './../../store/store';
+import { store } from "./../../store/store";
 import styled from "styled-components";
 
 import logo from "./logo-spread.png";
 
 const LoginArea = styled.section`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: #F3F3F3;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #f3f3f3;
+  align-items: center;
+  justify-content: center;
 `;
 
 const LoginBox = styled.div`
@@ -94,21 +94,19 @@ const LoginBox = styled.div`
 `;
 
 const Login = () => {
+  const storeContext = useContext(store);
+  const { state } = storeContext;
 
-    const storeContext = useContext(store);
-    const { state } = storeContext;
+  console.log("Access state", state);
 
-    console.log("Access state", state);
+  const [loginFormEmail, setLoginEmail] = useState("");
+  const [loginFormPassword, setLoginPassword] = useState("");
 
-    const [loginFormEmail, setLoginEmail] = useState("");
-    const [loginFormPassword, setLoginPassword] = useState("");
-    
+  const createLoginToken = (e) => {
+    e.preventDefault();
+    console.log("@todo: Create login token");
 
-    const createLoginToken = (e) => {
-        e.preventDefault();
-        console.log("@todo: Create login token");
-
-        /*fetch(`${state.backendUrl}/authenticate`, {
+    /*fetch(`${state.backendUrl}/authenticate`, {
             method: `POST`,
             headers: {
             'Accept': 'application/json',
@@ -142,51 +140,51 @@ const Login = () => {
 
             });
             */
-    }
-    
-    const updateLoginFields = (e, i) => {
-        e.preventDefault();
-        if (i === 0)
-            loginFormEmail = e.target.value;
+  };
 
-        else if (i === 1)
-            loginFormPassword = e.target.value
-    }
+  const updateLoginFields = (e, i) => {
+    e.preventDefault();
+    if (i === 0) loginFormEmail = e.target.value;
+    else if (i === 1) loginFormPassword = e.target.value;
+  };
 
-    if (!state.sessionData.success) {
-        return (
-            <LoginArea>
-                <LoginBox>
-                    <div className="logo"></div>
-                    <h1>Dashboard</h1>
-                    <div className="status-display-bar" style={{
-                        opacity: state.sessionData.error ? 1 : 0
-                    }}>
-                        {state.sessionData.error !== null ? state.sessionData.error.message : ``}
-                    </div>
-                    <input
-                        type="text"
-                        placeholder={`Email Address`}
-                        onChange={(e) => setLoginEmail(e.target.value)}
-                    />
-                    <input
-                        type="password"
-                        placeholder={`Password`}
-                        onChange={(e) => setLoginPassword(e.target.value)}
-                    />
-                    <p className="button-holder">
-                        <button className="normal" onClick={(e) => createLoginToken(e)}>Sign In</button>
-                    </p>
-                </LoginBox>
-            </LoginArea>
-        )
-    }
-
-    else {
-        return (
-            <>Redirect To /</>
-        )
-    }
-}
+  if (!state.sessionData.success) {
+    return (
+      <LoginArea>
+        <LoginBox>
+          <div className="logo"></div>
+          <h1>Dashboard</h1>
+          <div
+            className="status-display-bar"
+            style={{
+              opacity: state.sessionData.error ? 1 : 0,
+            }}
+          >
+            {state.sessionData.error !== null
+              ? state.sessionData.error.message
+              : ``}
+          </div>
+          <input
+            type="text"
+            placeholder={`Email Address`}
+            onChange={(e) => setLoginEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder={`Password`}
+            onChange={(e) => setLoginPassword(e.target.value)}
+          />
+          <p className="button-holder">
+            <button className="normal" onClick={(e) => createLoginToken(e)}>
+              Sign In
+            </button>
+          </p>
+        </LoginBox>
+      </LoginArea>
+    );
+  } else {
+    return <>Redirect To /</>;
+  }
+};
 
 export default Login;
