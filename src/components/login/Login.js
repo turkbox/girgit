@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
-import * as Cookies from "js-cookie";
-
-import {Redirect} from "react-router-dom";
-//import { store } from './../../store.js';
+import React, { useContext, useState } from "react";
+import { store } from './../../store/store';
 import styled from "styled-components";
-import logo from "./../../assets/favicon.png";
+
+import logo from "./logo-spread.png";
 
 const LoginArea = styled.section`
     width: 100%;
@@ -96,18 +94,19 @@ const LoginBox = styled.div`
 `;
 
 const Login = () => {
-    //this store dependencies has to be removed
-    //const storeContext = useContext(store);
-    //const { dispatch, state } = storeContext;
 
-    let loginFormEmail = ``;
-    let loginFormPassword = ``;
+    const storeContext = useContext(store);
+    const { state } = storeContext;
+
+    console.log("Access state", state);
+
+    const [loginFormEmail, setLoginEmail] = useState("");
+    const [loginFormPassword, setLoginPassword] = useState("");
     
-    //console.log("State in login component", state);
 
     const createLoginToken = (e) => {
         e.preventDefault();
-
+        console.log("@todo: Create login token");
 
         /*fetch(`${state.backendUrl}/authenticate`, {
             method: `POST`,
@@ -126,7 +125,6 @@ const Login = () => {
             .then(function(payload) {
 
                 if (!payload.error) {
-                    Cookies.set("sessionData", JSON.stringify(payload));
                     dispatch({
                         type: `REGISTER_SUCCESSFUL_LOGIN`,
                         payload: payload
@@ -166,8 +164,16 @@ const Login = () => {
                     }}>
                         {state.sessionData.error !== null ? state.sessionData.error.message : ``}
                     </div>
-                    <input type="text" placeholder={`Email Address`} onChange={(e) => updateLoginFields(e, 0)}/>
-                    <input type="password" placeholder={`Password`} onChange={(e) => updateLoginFields(e, 1)}/>
+                    <input
+                        type="text"
+                        placeholder={`Email Address`}
+                        onChange={(e) => setLoginEmail(e.target.value)}
+                    />
+                    <input
+                        type="password"
+                        placeholder={`Password`}
+                        onChange={(e) => setLoginPassword(e.target.value)}
+                    />
                     <p className="button-holder">
                         <button className="normal" onClick={(e) => createLoginToken(e)}>Sign In</button>
                     </p>
@@ -178,7 +184,7 @@ const Login = () => {
 
     else {
         return (
-            <Redirect to="/"/>
+            <>Redirect To /</>
         )
     }
 }
