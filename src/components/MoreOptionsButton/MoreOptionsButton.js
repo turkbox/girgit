@@ -52,12 +52,14 @@ const ActionPanelDropdownOption = styled.a`
   display: block;
 `;
 
+
 class MoreOptionsButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       showMenu: false,
     };
+
     this.toggleMenu = this.toggleMenu.bind(this);
     this.dispatchDeleteCampaignRequest = this.dispatchDeleteCampaignRequest.bind(
       this
@@ -86,21 +88,16 @@ class MoreOptionsButton extends React.Component {
   renderMenu = () => {
     if (this.state.showMenu)
       return (
-        <ActionPanelDropdown>
-          <ActionPanelDropdownOption
-            onClick={(e) => this.dispatchDeleteCampaignRequest(e)}
-          >
-            Delete
-          </ActionPanelDropdownOption>
-          <ActionPanelDropdownOption to={`/redeem/${this.props.campaignId}`}>
-            View Redemption Portal
-          </ActionPanelDropdownOption>
-          <ActionPanelDropdownOption
-            onClick={(e) => this.dispatchFetchCampaignCSVRequest(e)}
-          >
-            Export Coupons
-          </ActionPanelDropdownOption>
-        </ActionPanelDropdown>
+          this.props.schema.map((menu, i) => (
+          <ActionPanelDropdown>
+            <ActionPanelDropdownOption
+              onClick={this.props.schema.optionAction}>
+                     {menu.optionName}
+                     
+            </ActionPanelDropdownOption>
+
+          </ActionPanelDropdown>  
+          ))
       );
   };
 

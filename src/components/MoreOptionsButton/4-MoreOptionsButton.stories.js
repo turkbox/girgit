@@ -9,14 +9,21 @@ export default {
 
 /* Refer to this for schema planning: https://baseweb.design/components/menu/ */
 
+const dispatchDeleteCampaignRequest = (e) => {
+  e.preventDefault();
+  console.log(`Delete Campaign Request`);
+};
+
+const dispatchFetchCampaignCSVRequest = (e) => {
+  e.preventDefault();
+  console.log(`Delete Campaign Request`);
+};
+
 const schema = [
   {
     optionName: "Delete",
     optionValue: "delete",
-    optionAction: "RENDER_ADMIN_CONSOLE_MODAL",
-    optionPayload: {
-      hello: "world",
-    },
+    optionAction: dispatchDeleteCampaignRequest, 
   },
 ];
 
