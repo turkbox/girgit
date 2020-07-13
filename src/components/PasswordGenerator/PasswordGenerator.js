@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { store } from "./../../store/store";
 import ReactPasswordStrength from 'react-password-strength';
-import {Redirect} from "react-router-dom";
+
 import styled from "styled-components";
 import logo from "./logo-spread.png";
 
@@ -106,7 +106,9 @@ const PasswordGenerator = (props) => {
     const storeContext = useContext(store);
     const { state } = storeContext;
 
-    const [accountId, setAccountId] = useState(props.match.params.accountId);
+    console.log("Access state", state);
+
+    const [accountId, setAccountId] = useState("");
     const [userDetails, setUserDetails] = useState({
         name: "",
         role: "",
@@ -121,30 +123,33 @@ const PasswordGenerator = (props) => {
                                             })
 
     const getUserDetails = () => {
-        fetch(`${state.backendUrl}/api/v4/users/${accountId}`)
-        .then((response) => {
-            /* Error handling for HTTP requests: (eg. when user is not found) */
-            if (!response.ok) {
-                throw Error(`${response.status} HTTP error: ${response.statusText}`);
-            }
-            return response.json()
-        })
-        .then((data) => {
-            setUserDetails({
-                "name": data.name,
-                "role": data.role,
-                "email": data.email,
-                "password": data.password,
-            })
-        })
-        .catch((error) => {
-            console.log("Could not connect to API", error);
 
-            /* Redirect to Login page if API connection couldn't be made or there is another error */
-            requestRedirect(true);
-            /* @todo: Use Snackbar component to show error when it is ready */
-        })
-    }
+        /*fetch(`${state.backendUrl}/api/v4/users/${accountId}`)
+            .then((response) => {
+                //Error handling for HTTP requests: (eg. when user is not found)
+                if (!response.ok) {
+                    throw Error(`${response.status} HTTP error: ${response.statusText}`);
+                }
+                return response.json()
+            })
+            .then((data) => {
+                setUserDetails({
+                    "name": data.name,
+                    "role": data.role,
+                    "email": data.email,
+                    "password": data.password,
+                })
+            })
+            .catch((error) => {
+                console.log("Could not connect to API", error);
+
+                // Redirect to Login page if API connection couldn't be made or there is another error 
+                requestRedirect(true);
+                // @todo: Use Snackbar component to show error when it is ready 
+            })
+            */
+           console.log("Got user details");
+    };
 
     const handlePasswordChange = (password) =>{
         if (password.isValid) {
@@ -158,7 +163,7 @@ const PasswordGenerator = (props) => {
     
     const updatePasswordinAPI = () => {
         if (newPassword.isValid) {
-            fetch(`${state.backendUrl}/api/v4/users/${accountId}`, {
+            /*fetch(`${state.backendUrl}/api/v4/users/${accountId}`, {
                 method: `PATCH`,
                 headers: {
                     'Accept': 'application/json',
@@ -179,19 +184,21 @@ const PasswordGenerator = (props) => {
                     requestRedirect(true);
                 }
             })
+            */
+           console.log("Password is Valid and updated");
         }
         else {
-            /* @todo: Use Snackbar component to show error when it is ready */
+            // @todo: Use Snackbar component to show error when it is ready 
             console.log("Password entered is weak");
         }
     }
 
-    /* Fetches user details for the userID provided in the URL */
+    // Fetches user details for the userID provided in the URL
     useEffect(() => {
         getUserDetails();
     });
     
-    /* @todo: Use updated styled-component password-generator component */
+    // @todo: Use updated styled-component password-generator component 
     if (redirectRequested === false) {
         return(
             <LoginArea>
@@ -215,9 +222,7 @@ const PasswordGenerator = (props) => {
         )
     }
     else {
-        return (
-            <Redirect to="/login"/>
-        )
+        return <>Redirect To /</>;  
     }
     
 }

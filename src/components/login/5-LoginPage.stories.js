@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Import StateProvider to connect to store */
-import { StateProvider } from "./../../store/store";
+import { StateProvider } from "../../store/store";
 
 import Login from "./Login";
 
