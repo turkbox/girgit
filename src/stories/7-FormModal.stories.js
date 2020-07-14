@@ -9,13 +9,16 @@ export default {
   title: 'Form Modal',
   component: FormModal,
 };
+const data = [
+  {"name": "name", "display": "Name", "type": "text", "default": ""},
+  {"name": "totalCoupons", "display": "Total Coupons", "type": "number", "default": 0},
+  {"name": "expiryDate", "display": "Expiry Date", "type": "date", "default": new Date().toString()}
+]
 
-const definition = [
-    {"name": "name", "display": "Name", "type": "text", "default": ""},
-    {"name": "totalCoupons", "display": "Total Coupons", "type": "number", "default": 0},
-    {"name": "expiryDate", "display": "Expiry Date", "type": "date", "default": new Date().toString()}
-];
-
-
-export const Form = () => <FormModal schema={definition} />;
+export const FormModals = () => 
+	<BrowserRouter>
+		<FormModal
+		definition = {data}
+		/>
+	</BrowserRouter>;
 

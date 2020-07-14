@@ -119,7 +119,6 @@ class FormModal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: null,
             formData: this.props.definition.map((field) => {
                 return {
                     name: field.name,
@@ -130,7 +129,6 @@ class FormModal extends React.Component {
                 }
             }) 
         }
-        
         this.triggerModalSuccessEvent = this.triggerModalSuccessEvent.bind(this);
         console.log(this.state);
     }
@@ -146,26 +144,22 @@ class FormModal extends React.Component {
 
     triggerModalSuccessEvent = (e) => {
         e.preventDefault();
-        console.log("form created");
-        /*
         let output = this.state.formData.map((field) => ({
             "key": field.name,
             "value": field.value
         }))
-        */
-        //this.props.onSuccess(output);
+        this.props.onSuccess(output);
     }
-
-    onCancel=() => {
-        this.setState({modal: null})
-    }
-
+    
     render = () => {
         let self = this;
         return (
             <>
                 <ExpandingFog>
                     <FormContainer>
+                        <ModalHeader>
+                            {this.props.title}
+                        </ModalHeader>
                         <ModalBody>
                             {
                                 this.state.formData.map((field, i) => {
@@ -182,7 +176,8 @@ class FormModal extends React.Component {
                                                     }
                                                 </ModalSelectField>
                                             </p>
-                                            </div>                                           
+                                            </div>
+                                            
                                         )
                                     else
                                         return (
@@ -196,7 +191,7 @@ class FormModal extends React.Component {
                             }
                         </ModalBody>
                         <ModalButtonPanel>
-                            <ModalNegativeButton onClick={() => this.onCancel()}>Cancel</ModalNegativeButton>
+                            <ModalNegativeButton onClick={() => this.props.onCancel()}>Cancel</ModalNegativeButton>
                             <ModalButton onClick={(e) => this.triggerModalSuccessEvent(e)}>Create</ModalButton>
                         </ModalButtonPanel>
                     </FormContainer>
