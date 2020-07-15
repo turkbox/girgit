@@ -42,7 +42,7 @@ const ActionPanelDropdown = styled.div`
 const ActionPanelDropdownOption = styled.a`
   cursor: pointer;
   padding: 0 10px;
-  width: 200px;
+  width: 100%;
   transition: 0.25s all ease-in-out;
   &:hover {
     background: #ececec;
@@ -50,8 +50,7 @@ const ActionPanelDropdownOption = styled.a`
   text-decoration: none;
   color: initial;
   display: block;
-  text-align: left;
-  font-size: 1rem;
+
 `;
 
 
@@ -78,15 +77,16 @@ class MoreOptionsButton extends React.Component {
   renderMenu = () => {
     if (this.state.showMenu)
       return (
-          this.props.schema.map((menu, i) => (
-          
+        <ActionPanelDropdown>
+          {this.props.schema.map((menu, i) => (  
+                    
             <ActionPanelDropdownOption
               onClick={() => this.props.schema.optionAction}>
-                     {menu.optionName}
-                     
+                     {menu.optionName}                    
             </ActionPanelDropdownOption> 
-          ))
 
+          ))}
+          </ActionPanelDropdown>
       );
   };
 

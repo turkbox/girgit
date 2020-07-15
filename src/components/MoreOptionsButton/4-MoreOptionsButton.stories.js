@@ -29,7 +29,7 @@ const RenewUser = (e) => {
   console.log(`user expiry date extended`);
 };
 
-const schema = [
+const multipledata = [
   {
     optionName: "Delete",
     optionValue: "delete",
@@ -52,4 +52,14 @@ const schema = [
   },
 ];
 
-export const DefaultInput = () => <MoreOptionsButton schema={schema} />;
+const singledata = [
+  {
+    optionName: "Delete",
+    optionValue: "delete",
+    optionAction: dispatchDeleteCampaignRequest, 
+  },
+];
+
+export const MultipleOptions = () => <MoreOptionsButton schema={multipledata} />;
+export const SingleOption = () => <MoreOptionsButton schema={singledata} />;
+
