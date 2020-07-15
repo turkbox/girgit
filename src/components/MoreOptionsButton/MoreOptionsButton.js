@@ -42,7 +42,7 @@ const ActionPanelDropdown = styled.div`
 const ActionPanelDropdownOption = styled.a`
   cursor: pointer;
   padding: 0 10px;
-  width: 100%;
+  width: 200px;
   transition: 0.25s all ease-in-out;
   &:hover {
     background: #ececec;
@@ -50,6 +50,8 @@ const ActionPanelDropdownOption = styled.a`
   text-decoration: none;
   color: initial;
   display: block;
+  text-align: left;
+  font-size: 1rem;
 `;
 
 
@@ -61,9 +63,7 @@ class MoreOptionsButton extends React.Component {
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
-    this.dispatchDeleteCampaignRequest = this.dispatchDeleteCampaignRequest.bind(
-      this
-    );
+    
   }
 
   render = () => {
@@ -75,29 +75,18 @@ class MoreOptionsButton extends React.Component {
     );
   };
 
-  dispatchDeleteCampaignRequest = (e) => {
-    e.preventDefault();
-    console.log(`Delete Campaign Request`);
-  };
-
-  dispatchFetchCampaignCSVRequest = (e) => {
-    e.preventDefault();
-    console.log(`Delete Campaign Request`);
-  };
-
   renderMenu = () => {
     if (this.state.showMenu)
       return (
           this.props.schema.map((menu, i) => (
-          <ActionPanelDropdown>
+          
             <ActionPanelDropdownOption
-              onClick={this.props.schema.optionAction}>
+              onClick={() => this.props.schema.optionAction}>
                      {menu.optionName}
                      
-            </ActionPanelDropdownOption>
-
-          </ActionPanelDropdown>  
+            </ActionPanelDropdownOption> 
           ))
+
       );
   };
 
