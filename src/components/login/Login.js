@@ -103,6 +103,7 @@ const Login = () => {
     //const { dispatch, state } = storeContext;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -126,6 +127,8 @@ const Login = () => {
         /*fetch(`${state.backendUrl}/authenticate`, {
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
 
     let loginFormEmail = ``;
     let loginFormPassword = ``;
@@ -137,6 +140,9 @@ const Login = () => {
 
 
         /*fetch(`${state.backendUrl}/authenticate`, {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             method: `POST`,
             headers: {
@@ -171,6 +177,7 @@ const Login = () => {
 
             });
             */
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -223,6 +230,8 @@ const Login = () => {
 
 export default Login;
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
