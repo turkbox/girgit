@@ -102,6 +102,7 @@ const Login = () => {
     //const storeContext = useContext(store);
     //const { dispatch, state } = storeContext;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -122,6 +123,19 @@ const Login = () => {
         /*fetch(`${state.backendUrl}/authenticate`, {
 >>>>>>> Stashed changes
 =======
+        /*fetch(`${state.backendUrl}/authenticate`, {
+>>>>>>> Stashed changes
+=======
+
+    let loginFormEmail = ``;
+    let loginFormPassword = ``;
+    
+    //console.log("State in login component", state);
+
+    const createLoginToken = (e) => {
+        e.preventDefault();
+
+
         /*fetch(`${state.backendUrl}/authenticate`, {
 >>>>>>> Stashed changes
             method: `POST`,
@@ -157,6 +171,7 @@ const Login = () => {
 
             });
             */
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   };
@@ -208,6 +223,8 @@ const Login = () => {
 
 export default Login;
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     }
