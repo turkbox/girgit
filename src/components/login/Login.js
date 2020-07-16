@@ -101,6 +101,9 @@ const Login = () => {
     //this store dependencies has to be removed
     //const storeContext = useContext(store);
     //const { dispatch, state } = storeContext;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   console.log("Access state", state);
@@ -113,7 +116,11 @@ const Login = () => {
     console.log("@todo: Create login token");
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     /*fetch(`${state.backendUrl}/authenticate`, {
+=======
+        /*fetch(`${state.backendUrl}/authenticate`, {
+>>>>>>> Stashed changes
 =======
         /*fetch(`${state.backendUrl}/authenticate`, {
 >>>>>>> Stashed changes
@@ -150,6 +157,7 @@ const Login = () => {
 
             });
             */
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   };
 
@@ -200,6 +208,8 @@ const Login = () => {
 
 export default Login;
 =======
+=======
+>>>>>>> Stashed changes
     }
     
     const updateLoginFields = (e, i) => {
