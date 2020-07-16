@@ -94,8 +94,14 @@ const LoginBox = styled.div`
 `;
 
 const Login = () => {
+<<<<<<< Updated upstream
   const storeContext = useContext(store);
   const { state } = storeContext;
+=======
+    //this store dependencies has to be removed
+    //const storeContext = useContext(store);
+    //const { dispatch, state } = storeContext;
+>>>>>>> Stashed changes
 
   console.log("Access state", state);
 
@@ -106,7 +112,11 @@ const Login = () => {
     e.preventDefault();
     console.log("@todo: Create login token");
 
+<<<<<<< Updated upstream
     /*fetch(`${state.backendUrl}/authenticate`, {
+=======
+        /*fetch(`${state.backendUrl}/authenticate`, {
+>>>>>>> Stashed changes
             method: `POST`,
             headers: {
             'Accept': 'application/json',
@@ -140,6 +150,7 @@ const Login = () => {
 
             });
             */
+<<<<<<< Updated upstream
   };
 
   const updateLoginFields = (e, i) => {
@@ -188,3 +199,45 @@ const Login = () => {
 };
 
 export default Login;
+=======
+    }
+    
+    const updateLoginFields = (e, i) => {
+        e.preventDefault();
+        if (i === 0)
+            loginFormEmail = e.target.value;
+
+        else if (i === 1)
+            loginFormPassword = e.target.value
+    }
+
+    if (!state.sessionData.success) {
+        return (
+            <LoginArea>
+                <LoginBox>
+                    <div className="logo"></div>
+                    <h1>Dashboard</h1>
+                    <div className="status-display-bar" style={{
+                        opacity: state.sessionData.error ? 1 : 0
+                    }}>
+                        {state.sessionData.error !== null ? state.sessionData.error.message : ``}
+                    </div>
+                    <input type="text" placeholder={`Email Address`} onChange={(e) => updateLoginFields(e, 0)}/>
+                    <input type="password" placeholder={`Password`} onChange={(e) => updateLoginFields(e, 1)}/>
+                    <p className="button-holder">
+                        <button className="normal" onClick={(e) => createLoginToken(e)}>Sign In</button>
+                    </p>
+                </LoginBox>
+            </LoginArea>
+        )
+    }
+
+    else {
+        return (
+            <Redirect to="/"/>
+        )
+    }
+}
+
+export default Login;
+>>>>>>> Stashed changes
