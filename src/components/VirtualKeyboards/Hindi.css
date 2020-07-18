@@ -1,0 +1,28 @@
+p.button-holder {
+  text-align: center;
+  margin: 30px 0;
+}
+.row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.button {
+  box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.3);
+  height: 40px;
+  width: 10%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  background: #fff;
+  border-bottom: 1px solid #b5b5b5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+.button:hover {
+  cursor: pointer;
+}
