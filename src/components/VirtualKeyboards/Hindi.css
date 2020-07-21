@@ -5,11 +5,26 @@ p.button-holder {
 .row {
   display: flex;
   margin-bottom: 5px;
+  color: black;
+  height: 40px;
+}
+
+.row-blue {
+  display: flex;
+  margin-bottom: 5px;
+  color: rgb(115, 193, 219);
+  height: 40px;
+}
+
+.row-last {
+  display: flex;
+  margin-bottom: 5px;
+  color: black;
+  height: 50px;
 }
 
 .button {
   box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.3);
-  height: 40px;
   width: 10%;
   border-radius: 5px;
   box-sizing: border-box;
@@ -21,8 +36,56 @@ p.button-holder {
   align-items: center;
   justify-content: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: black;
+  font-weight: 550;
 }
 .button:hover {
   cursor: pointer;
+}
+
+.button-search {
+  background-color: rgb(49, 142, 173);
+  box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.3);
+  width: 13%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  border-bottom: 1px solid #b5b5b5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: 550;
+}
+
+.end-button {
+  box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.3);
+  width: 12%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  background: #fff;
+  border-bottom: 1px solid #b5b5b5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: 550;
+}
+
+.spacebar {
+  box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.3);
+  width: 25%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  background: lightgray;
+  border-bottom: 1px solid #b5b5b5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: 550;
 }

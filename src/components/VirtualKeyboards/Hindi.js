@@ -101,18 +101,18 @@ const TaskContainer = styled.div`
   <div className="button">{"\u0936\u094D\u0930"}</div>
   <div className="button">{"\u090B"}</div>
   <div className="button">{"\u094D"}</div>
-  <div className="button">{"CROSS SYMBOL"}</div>
+  <div className="button"><i class="fas fa-backspace"></i></div>
 </div>
 
-<div className="row">
-  <div className="button">{"? \u0967 \u0968 \u0969"}</div>
-  <div className="button">{"emoji n ,"}</div>
-  <div className="button">{"globe"}</div>
-  <div className="button">{"hindi spacebar"}</div>
-  <div className="button">{"double sided arrow"}</div>
-  <div className="button">{"\u0964"}</div>
-  <div className="button">{"search logo"}</div>
-</div>
+<div className="row-last">
+        <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+        <div className="end-button"><i class="far fa-smile"></i><br/> ,</div>
+        <div className="end-button"><i class="fas fa-globe fa-2x"></i></div>
+        <div className="spacebar">{"\u0939\u093F\u0928\u094D\u0926\u0940"}</div>
+        <div className="end-button">{"double sided arrow"}</div>
+        <div className="end-button">{"\u0964"}</div>
+        <div className="button-search"><i class="fas fa-search fa-2x"></i></div>
+      </div>
 
 </TaskContainer>
 */
@@ -181,18 +181,18 @@ const TaskContainer = styled.div`
   <div className="button">{"\u092E\u094D\u0926"}</div>
   <div className="button">{"\u0935\u094D\u0926"}</div>
   <div className="button">{"\u0926\u0943"}</div>
-  <div className="button">{"CROSS SYMBOL"}</div>
+  <div className="button"><i class="fas fa-backspace"></i></div>
 </div>
 
-<div className="row">
-  <div className="button">{"? \u0967 \u0968 \u0969"}</div>
-  <div className="button">{"emoji n ,"}</div>
-  <div className="button">{"globe"}</div>
-  <div className="button">{"hindi spacebar"}</div>
-  <div className="button">{"double sided arrow"}</div>
-  <div className="button">{"\u0964"}</div>
-  <div className="button">{"search logo"}</div>
-</div>
+<div className="row-last">
+        <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+        <div className="end-button"><i class="far fa-smile"></i><br/> ,</div>
+        <div className="end-button"><i class="fas fa-globe fa-2x"></i></div>
+        <div className="spacebar">{"\u0939\u093F\u0928\u094D\u0926\u0940"}</div>
+        <div className="end-button">{"double sided arrow"}</div>
+        <div className="end-button">{"\u0964"}</div>
+        <div className="button-search"><i class="fas fa-search fa-2x"></i></div>
+      </div>
 
 </TaskContainer>
 */
@@ -215,7 +215,7 @@ const TaskContainer = styled.div`
       <div className="row">
         <div className="button">{"@"}</div>
         <div className="button">{"#"}</div>
-        <div className="button">{"INDIAN RUPEE"}</div>
+        <div className="button"><i class="fas fa-rupee-sign"></i></div>
         <div className="button">{"_"}</div>
         <div className="button">{"&"}</div>
         <div className="button">{"-"}</div>
@@ -234,7 +234,7 @@ const TaskContainer = styled.div`
         <div className="button">{";"}</div>
         <div className="button">{"!"}</div>
         <div className="button">{"?"}</div>
-        <div className="button">{"CROSS SYMBOL"}</div>
+        <div className="button"><i class="fas fa-backspace"></i></div>
       </div>
       
       <div className="row">
@@ -313,17 +313,17 @@ const TaskContainer = styled.div`
         <div className="button">{"\u093D"}</div>
         <div className="button">{"\u0965"}</div>
         <div className="button">{"\u0950"}</div>
-        <div className="button">{"CROSS SYMBOL"}</div>
+        <div className="button"><i class="fas fa-backspace"></i></div>
       </div>
       
-      <div className="row">
-        <div className="button">{"? \u0967 \u0968 \u0969"}</div>
-        <div className="button">{"emoji n ,"}</div>
-        <div className="button">{"globe"}</div>
-        <div className="button">{"hindi spacebar"}</div>
-        <div className="button">{"double sided arrow"}</div>
-        <div className="button">{"\u0964"}</div>
-        <div className="button">{"search logo"}</div>
+      <div className="row-last">
+        <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+        <div className="end-button"><i class="far fa-smile"></i><br/> ,</div>
+        <div className="end-button"><i class="fas fa-globe fa-2x"></i></div>
+        <div className="spacebar">{"\u0939\u093F\u0928\u094D\u0926\u0940"}</div>
+        <div className="end-button">{"double sided arrow"}</div>
+        <div className="end-button">{"\u0964"}</div>
+        <div className="button-search"><i class="fas fa-search fa-2x"></i></div>
       </div>
 
     </TaskContainer>
@@ -373,7 +373,7 @@ const TaskContainer = styled.div`
 const HindiKeyboard = (props) => {
   return (
     <TaskContainer>
-      <div className="row">
+      <div className="row-blue">
         <div className="button">{"\u0905"}</div>
         <div className="button">{"\u0906"}</div>
         <div className="button">{"\u0907"}</div>
@@ -435,17 +435,26 @@ const HindiKeyboard = (props) => {
         <div className="button">{"\u0936\u094D\u0930"}</div>
         <div className="button">{"\u090B"}</div>
         <div className="button">{"\u094D"}</div>
-        <div className="button">{"CROSS SYMBOL"}</div>
+        <div className="button">
+          <i class="fas fa-backspace"></i>
+        </div>
       </div>
 
-      <div className="row">
-        <div className="button">{"? \u0967 \u0968 \u0969"}</div>
-        <div className="button">{"emoji n ,"}</div>
-        <div className="button">{"globe"}</div>
-        <div className="button">{"hindi spacebar"}</div>
-        <div className="button">{"double sided arrow"}</div>
-        <div className="button">{"\u0964"}</div>
-        <div className="button">{"search logo"}</div>
+      <div className="row-last">
+        <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+        <div className="end-button">
+          <i class="far fa-smile"></i>
+          <br /> ,
+        </div>
+        <div className="end-button">
+          <i class="fas fa-globe fa-2x"></i>
+        </div>
+        <div className="spacebar">{"\u0939\u093F\u0928\u094D\u0926\u0940"}</div>
+        <div className="end-button">{"double sided arrow"}</div>
+        <div className="end-button">{"\u0964"}</div>
+        <div className="button-search">
+          <i class="fas fa-search fa-2x"></i>
+        </div>
       </div>
     </TaskContainer>
   );
