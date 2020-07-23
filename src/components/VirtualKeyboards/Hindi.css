@@ -6,21 +6,21 @@ p.button-holder {
   display: flex;
   margin-bottom: 5px;
   color: black;
-  height: 40px;
+  height: 15%;
 }
 
 .row-blue {
   display: flex;
   margin-bottom: 5px;
   color: rgb(115, 193, 219);
-  height: 40px;
+  height: 15%;
 }
 
 .row-last {
   display: flex;
   margin-bottom: 5px;
   color: black;
-  height: 50px;
+  height: 15%;
 }
 
 .button {
@@ -88,4 +88,14 @@ p.button-holder {
   justify-content: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-weight: 550;
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+}
+
+.text-box {
+  height: 10%;
+  width: 100%;
 }

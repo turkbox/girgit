@@ -374,19 +374,46 @@ class HindiKeyboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      current: 1 / 4,
-      next: "",
-      pressedButton: "",
+      current: 1,
+      input_text: "",
     };
   }
 
-  render = () => {
-    if (this.state.current === 1 / 4) {
+  switchLayout = (next) => {
+    this.setState({
+      current: next,
+    });
+  };
+
+  onButtonClick = (letter) => {
+    this.setState((prevState) => ({
+      input_text: prevState.input_text + letter,
+    }));
+  };
+
+  backspace = () => {
+    this.setState((prevState) => ({
+      input_text: prevState.input_text.slice(0, -1),
+    }));
+  };
+
+  getLayout = () => {
+    if (this.state.current === 1) {
       return (
         <TaskContainer>
           <div className="row-blue">
-            <div className="button">{"\u0905"}</div>
-            <div className="button">{"\u0906"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0905")}
+            >
+              {"\u0905"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0906")}
+            >
+              {"\u0906"}
+            </div>
             <div className="button">{"\u0907"}</div>
             <div className="button">{"\u0908"}</div>
             <div className="button">{"\u0909"}</div>
@@ -437,7 +464,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row">
-            <div className="button">{"1/4"}</div>
+            <div className="button" onClick={() => this.switchLayout(2)}>
+              {"1/4"}
+            </div>
             <div className="button">{"\u0937"}</div>
             <div className="button">{"\u0938"}</div>
             <div className="button">{"\u0939"}</div>
@@ -446,7 +475,7 @@ class HindiKeyboard extends React.Component {
             <div className="button">{"\u0936\u094D\u0930"}</div>
             <div className="button">{"\u090B"}</div>
             <div className="button">{"\u094D"}</div>
-            <div className="button">
+            <div className="button" onClick={() => this.backspace()}>
               <i class="fas fa-backspace"></i>
             </div>
           </div>
@@ -473,7 +502,7 @@ class HindiKeyboard extends React.Component {
       );
     }
 
-    if (this.state.current === 2 / 4) {
+    if (this.state.current === 2) {
       return (
         <TaskContainer>
           <div className="row">
@@ -529,7 +558,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row">
-            <div className="button">{"2/4"}</div>
+            <div className="button" onClick={() => this.switchLayout(3)}>
+              {"2/4"}
+            </div>
             <div className="button">{"\u0924\u094D\u0935"}</div>
             <div className="button">{"\u0926\u094D\u0926"}</div>
             <div className="button">{"\u0927\u094D\u0926"}</div>
@@ -565,7 +596,7 @@ class HindiKeyboard extends React.Component {
       );
     }
 
-    if (this.state.current === "\u0915\u0916\u0917") {
+    if (this.state.current === 3) {
       return (
         <TaskContainer>
           <div className="row">
@@ -611,7 +642,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row">
-            <div className="button">{"\u0915\u0916\u0917"}</div>
+            <div className="button" onClick={() => this.switchLayout(4)}>
+              {"\u0915\u0916\u0917"}
+            </div>
             <div className="button">{","}</div>
             <div className="button">{" 1234"}</div>
             <div className="button">{"hindi spacebar"}</div>
@@ -622,7 +655,7 @@ class HindiKeyboard extends React.Component {
       );
     }
 
-    if (this.state.current === 4 / 4) {
+    if (this.state.current === 4) {
       return (
         <TaskContainer>
           <div className="row">
@@ -678,7 +711,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row">
-            <div className="button">{"4/4"}</div>
+            <div className="button" onClick={() => this.switchLayout(1)}>
+              {"4/4"}
+            </div>
             <div className="button">{"\u0966"}</div>
             <div className="button">{"\u0953"}</div>
             <div className="button">{"\u0954"}</div>
@@ -713,6 +748,17 @@ class HindiKeyboard extends React.Component {
         </TaskContainer>
       );
     }
+  };
+
+  render = () => {
+    return (
+      <>
+        <div className="container">
+          <input value={this.state.input_text} className="text-box" />
+          {this.getLayout()}
+        </div>
+      </>
+    );
   };
 }
 
