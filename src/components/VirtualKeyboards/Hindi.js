@@ -148,7 +148,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row-last">
-            <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+            <div className="end-button" onClick={() => this.switchLayout(5)}>
+              {"? \u0967 \u0968 \u0969"}
+            </div>
             <div className="end-button">
               <i class="far fa-smile"></i>
               <br /> ,
@@ -242,7 +244,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row-last">
-            <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+            <div className="end-button" onClick={() => this.switchLayout(5)}>
+              {"? \u0967 \u0968 \u0969"}
+            </div>
             <div className="end-button">
               <i class="far fa-smile"></i>
               <br /> ,
@@ -336,7 +340,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row-last">
-            <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+            <div className="end-button" onClick={() => this.switchLayout(5)}>
+              {"? \u0967 \u0968 \u0969"}
+            </div>
             <div className="end-button">
               <i class="far fa-smile"></i>
               <br /> ,
@@ -413,7 +419,7 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row">
-            <div className="button" onClick={() => this.switchLayout(5)}>
+            <div className="button" onClick={() => this.switchLayout(1)}>
               {"4/4"}
             </div>
             <div className="button">{"\u0966"}</div>
@@ -430,7 +436,9 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row-last">
-            <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+            <div className="end-button" onClick={() => this.switchLayout(5)}>
+              {"? \u0967 \u0968 \u0969"}
+            </div>
             <div className="end-button">
               <i class="far fa-smile"></i>
               <br /> ,
