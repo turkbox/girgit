@@ -193,7 +193,7 @@ class HindiKeyboard extends React.Component {
             <div className="button">{"\u092E\u094D\u0930"}</div>
             <div className="button">{"\u092B\u094D\u0930"}</div>
             <div className="button">{"\u0935\u094D\u0930"}</div>
-            <div className="button">{"\u0915\u094D\u0924 NT RIGHT"}</div>
+            <div className="button">{"\u0915\u094D\u0924"}</div>
             <div className="button">{"\u0924\u094D\u0924"}</div>
             <div className="button">{"\u0939\u094D\u092E"}</div>
           </div>
@@ -219,7 +219,7 @@ class HindiKeyboard extends React.Component {
             <div className="button">{"\u0930\u094D\u0938"}</div>
             <div className="button">{"\u0930\u094D\u092A"}</div>
             <div className="button">{"\u0924\u094D\u0925"}</div>
-            <div className="button">{"\u0924\u094D\u0928 NR"}</div>
+            <div className="button">{"\u0924\u094D\u0928"}</div>
             <div className="button">{"\u0924\u094D\u092E"}</div>
             <div className="button">{"\u0924\u094D\u092F"}</div>
           </div>
@@ -267,56 +267,91 @@ class HindiKeyboard extends React.Component {
       return (
         <TaskContainer>
           <div className="row">
-            <div className="button">{"\u0967"}</div>
-            <div className="button">{"\u0968"}</div>
-            <div className="button">{"\u0969"}</div>
-            <div className="button">{"\u096A"}</div>
-            <div className="button">{"\u096B"}</div>
-            <div className="button">{"\u096C"}</div>
-            <div className="button">{"\u096D"}</div>
-            <div className="button">{"\u096E"}</div>
-            <div className="button">{"\u096F"}</div>
-            <div className="button">{"\u0966"}</div>
+            <div className="button">{"\u0930\u094D\u091F"}</div>
+            <div className="button">{"\u0930\u094D\u0916"}</div>
+            <div className="button">{"\u0930\u094D\u092F"}</div>
+            <div className="button">{"\u0916\u094D\u092F"}</div>
+            <div className="button">{"\u091C\u094D\u092F"}</div>
+            <div className="button">{"\u0924\u094D\u092F"}</div>
+            <div className="button">{"\u0927\u094D\u092F"}</div>
+            <div className="button">{"\u092A\u094D\u092F"}</div>
+            <div className="button">{"\u092D\u094D\u092F"}</div>
+            <div className="button">{"\u0932\u094D\u092F"}</div>
           </div>
 
           <div className="row">
-            <div className="button">{"@"}</div>
-            <div className="button">{"#"}</div>
-            <div className="button">
-              <i class="fas fa-rupee-sign"></i>
+            <div className="button">{"\u0935\u094D\u092F"}</div>
+            <div className="button">{"\u0937\u094D\u092F"}</div>
+            <div className="button">{"\u0938\u094D\u092F"}</div>
+            <div className="button">{"\u0928\u094D\u091F"}</div>
+            <div className="button">{"\u0928\u094D\u0924"}</div>
+            <div className="button">{"\u0928\u094D\u0925"}</div>
+            <div className="button">{"\u0928\u094D\u0926"}</div>
+            <div className="button">{"\u0928\u094D\u0928"}</div>
+            <div className="button">{"\u0928\u094D\u092F"}</div>
+            <div className="button">{"\u0928\u094D\u0939"}</div>
+          </div>
+
+          <div className="row">
+            <div className="button">{"\u092E\u094D\u091A"}</div>
+            <div className="button">{"\u092E\u094D\u091F"}</div>
+            <div className="button">{"\u092E\u094D\u0924"}</div>
+            <div className="button">{"\u092E\u094D\u092A"}</div>
+            <div className="button">{"\u092E\u094D\u092C"}</div>
+            <div className="button">{"\u092E\u094D\u092E"}</div>
+            <div className="button">{"\u092E\u094D\u092F"}</div>
+            <div className="button">{"\u092E\u094D\u0939"}</div>
+            <div className="button">{"\u0923\u094D\u0921"}</div>
+            <div className="button">{"\u092A\u094D\u0924"}</div>
+          </div>
+
+          <div className="row">
+            <div className="button">{"\u092A\u094D\u092A"}</div>
+            <div className="button">{"\u092A\u094D\u0932"}</div>
+            <div className="button">{"\u092C\u094D\u091C"}</div>
+            <div className="button">{"\u092C\u094D\u0926"}</div>
+            <div className="button">{"\u092C\u094D\u092C"}</div>
+            <div className="button">{"\u092C\u094D\u0932"}</div>
+            <div className="button">{"\u0918\u094D\u0928"}</div>
+            <div className="button">{"\u092B\u094D\u0924"}</div>
+            <div className="button">{"\u0936\u094D\u0930\u094D\u091A"}</div>
+            <div className="button">{"\u0936\u094D\u0930\u094D\u0935"}</div>
+          </div>
+
+          <div className="row">
+            <div className="button" onClick={() => this.switchLayout(4)}>
+              {"3/4"}
             </div>
-            <div className="button">{"_"}</div>
-            <div className="button">{"&"}</div>
-            <div className="button">{"-"}</div>
-            <div className="button">{"+"}</div>
-            <div className="button">{"("}</div>
-            <div className="button">{")"}</div>
-            <div className="button">{"/"}</div>
-          </div>
-
-          <div className="row">
-            <div className="button">{"= \\ <"}</div>
-            <div className="button">{"*"}</div>
-            <div className="button">{' " '}</div>
-            <div className="button">{"'"}</div>
-            <div className="button">{":"}</div>
-            <div className="button">{";"}</div>
-            <div className="button">{"!"}</div>
-            <div className="button">{"?"}</div>
+            <div className="button">{"\u0932\u094D\u091F"}</div>
+            <div className="button">{"\u0932\u094D\u092A"}</div>
+            <div className="button">{"\u0932\u094D\u092C"}</div>
+            <div className="button">{"\u0932\u094D\u0939"}</div>
+            <div className="button">{"\u0937\u094D\u091F"}</div>
+            <div className="button">{"\u0937\u094D\u0923"}</div>
+            <div className="button">{"\u0937\u094D\u092A"}</div>
+            <div className="button">{"\u0937\u094D\u0915"}</div>
             <div className="button">
               <i class="fas fa-backspace"></i>
             </div>
           </div>
 
-          <div className="row">
-            <div className="button" onClick={() => this.switchLayout(4)}>
-              {"\u0915\u0916\u0917"}
+          <div className="row-last">
+            <div className="end-button">{"? \u0967 \u0968 \u0969"}</div>
+            <div className="end-button">
+              <i class="far fa-smile"></i>
+              <br /> ,
             </div>
-            <div className="button">{","}</div>
-            <div className="button">{" 1234"}</div>
-            <div className="button">{"hindi spacebar"}</div>
-            <div className="button">{"."}</div>
-            <div className="button">{"search logo"}</div>
+            <div className="end-button">
+              <i class="fas fa-globe fa-2x"></i>
+            </div>
+            <div className="spacebar">
+              {"\u0939\u093F\u0928\u094D\u0926\u0940"}
+            </div>
+            <div className="end-button">{"double sided arrow"}</div>
+            <div className="end-button">{"\u0964"}</div>
+            <div className="button-search">
+              <i class="fas fa-search fa-2x"></i>
+            </div>
           </div>
         </TaskContainer>
       );
@@ -378,7 +413,7 @@ class HindiKeyboard extends React.Component {
           </div>
 
           <div className="row">
-            <div className="button" onClick={() => this.switchLayout(1)}>
+            <div className="button" onClick={() => this.switchLayout(5)}>
               {"4/4"}
             </div>
             <div className="button">{"\u0966"}</div>
@@ -408,6 +443,69 @@ class HindiKeyboard extends React.Component {
             </div>
             <div className="end-button">{"double sided arrow"}</div>
             <div className="end-button">{"\u0964"}</div>
+            <div className="button-search">
+              <i class="fas fa-search fa-2x"></i>
+            </div>
+          </div>
+        </TaskContainer>
+      );
+    }
+
+    if (this.state.current === 5) {
+      return (
+        <TaskContainer>
+          <div className="row">
+            <div className="button">{"\u0967"}</div>
+            <div className="button">{"\u0968"}</div>
+            <div className="button">{"\u0969"}</div>
+            <div className="button">{"\u096A"}</div>
+            <div className="button">{"\u096B"}</div>
+            <div className="button">{"\u096C"}</div>
+            <div className="button">{"\u096D"}</div>
+            <div className="button">{"\u096E"}</div>
+            <div className="button">{"\u096F"}</div>
+            <div className="button">{"\u0966"}</div>
+          </div>
+
+          <div className="row">
+            <div className="button">{"@"}</div>
+            <div className="button">{"#"}</div>
+            <div className="button">
+              <i class="fas fa-rupee-sign"></i>
+            </div>
+            <div className="button">{"_"}</div>
+            <div className="button">{"&"}</div>
+            <div className="button">{"-"}</div>
+            <div className="button">{"+"}</div>
+            <div className="button">{"("}</div>
+            <div className="button">{")"}</div>
+            <div className="button">{"/"}</div>
+          </div>
+
+          <div className="row">
+            <div className="button">{"= \\ <"}</div>
+            <div className="button">{"*"}</div>
+            <div className="button">{' " '}</div>
+            <div className="button">{"'"}</div>
+            <div className="button">{":"}</div>
+            <div className="button">{";"}</div>
+            <div className="button">{"!"}</div>
+            <div className="button">{"?"}</div>
+            <div className="button">
+              <i class="fas fa-backspace"></i>
+            </div>
+          </div>
+
+          <div className="row-last">
+            <div className="button" onClick={() => this.switchLayout(1)}>
+              {"\u0915\u0916\u0917"}
+            </div>
+            <div className="button">{","}</div>
+            <div className="button">{" 1234"}</div>
+            <div className="spacebar">
+              {"\u0939\u093F\u0928\u094D\u0926\u0940"}
+            </div>
+            <div className="button">{"."}</div>
             <div className="button-search">
               <i class="fas fa-search fa-2x"></i>
             </div>
