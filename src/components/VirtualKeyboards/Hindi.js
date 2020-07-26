@@ -81,67 +81,297 @@ class HindiKeyboard extends React.Component {
             >
               {"\u0906"}
             </div>
-            <div className="button">{"\u0907"}</div>
-            <div className="button">{"\u0908"}</div>
-            <div className="button">{"\u0909"}</div>
-            <div className="button">{"\u090A"}</div>
-            <div className="button">{"\u090F"}</div>
-            <div className="button">{"\u090E"}</div>
-            <div className="button">{"\u0913"}</div>
-            <div className="button">{"\u0914"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0907")}
+            >
+              {"\u0907"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0908")}
+            >
+              {"\u0908"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0909")}
+            >
+              {"\u0909"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u090A")}
+            >
+              {"\u090A"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u090F")}
+            >
+              {"\u090F"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u090E")}
+            >
+              {"\u090E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0913")}
+            >
+              {"\u0913"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0914")}
+            >
+              {"\u0914"}
+            </div>
           </div>
 
           <div className="row">
-            <div className="button">{"\u0915"}</div>
-            <div className="button">{"\u0916"}</div>
-            <div className="button">{"\u0917"}</div>
-            <div className="button">{"\u0918"}</div>
-            <div className="button">{"\u091A"}</div>
-            <div className="button">{"\u091B"}</div>
-            <div className="button">{"\u091C"}</div>
-            <div className="button">{"\u091D"}</div>
-            <div className="button">{"\u093C"}</div>
-            <div className="button">{"\u0902"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0915")}
+            >
+              {"\u0915"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0916")}
+            >
+              {"\u0916"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0917")}
+            >
+              {"\u0917"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0918")}
+            >
+              {"\u0918"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091A")}
+            >
+              {"\u091A"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091B")}
+            >
+              {"\u091B"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091C")}
+            >
+              {"\u091C"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091D")}
+            >
+              {"\u091D"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u093C")}
+            >
+              {"\u093C"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0902")}
+            >
+              {"\u0902"}
+            </div>
           </div>
 
           <div className="row">
-            <div className="button">{"\u091F"}</div>
-            <div className="button">{"\u0920"}</div>
-            <div className="button">{"\u0921"}</div>
-            <div className="button">{"\u0922"}</div>
-            <div className="button">{"\u0923"}</div>
-            <div className="button">{"\u0924"}</div>
-            <div className="button">{"\u0925"}</div>
-            <div className="button">{"\u0926"}</div>
-            <div className="button">{"\u0927"}</div>
-            <div className="button">{"\u0928"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091F")}
+            >
+              {"\u091F"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0920")}
+            >
+              {"\u0920"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0921")}
+            >
+              {"\u0921"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0922")}
+            >
+              {"\u0922"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0923")}
+            >
+              {"\u0923"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924")}
+            >
+              {"\u0924"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0925")}
+            >
+              {"\u0925"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0926")}
+            >
+              {"\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0927")}
+            >
+              {"\u0927"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0928")}
+            >
+              {"\u0928"}
+            </div>
           </div>
 
           <div className="row">
-            <div className="button">{"\u092A"}</div>
-            <div className="button">{"\u092B"}</div>
-            <div className="button">{"\u092C"}</div>
-            <div className="button">{"\u092D"}</div>
-            <div className="button">{"\u092E"}</div>
-            <div className="button">{"\u092F"}</div>
-            <div className="button">{"\u0930"}</div>
-            <div className="button">{"\u0932"}</div>
-            <div className="button">{"\u0935"}</div>
-            <div className="button">{"\u0936"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092A")}
+            >
+              {"\u092A"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092B")}
+            >
+              {"\u092B"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092C")}
+            >
+              {"\u092C"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092D")}
+            >
+              {"\u092D"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092E")}
+            >
+              {"\u092E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092F")}
+            >
+              {"\u092F"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930")}
+            >
+              {"\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0932")}
+            >
+              {"\u0932"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0935")}
+            >
+              {"\u0935"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0936")}
+            >
+              {"\u0936"}
+            </div>
           </div>
 
           <div className="row">
             <div className="button" onClick={() => this.switchLayout(2)}>
               {"1/4"}
             </div>
-            <div className="button">{"\u0937"}</div>
-            <div className="button">{"\u0938"}</div>
-            <div className="button">{"\u0939"}</div>
-            <div className="button">{"\u091C\u094D\u091E"}</div>
-            <div className="button">{"\u0915\u094D\u0937"}</div>
-            <div className="button">{"\u0936\u094D\u0930"}</div>
-            <div className="button">{"\u090B"}</div>
-            <div className="button">{"\u094D"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0937")}
+            >
+              {"\u0937"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0938")}
+            >
+              {"\u0938"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0939")}
+            >
+              {"\u0939"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091C\u094D\u091E")}
+            >
+              {"\u091C\u094D\u091E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0915\u094D\u0937")}
+            >
+              {"\u0915\u094D\u0937"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0936\u094D\u0930")}
+            >
+              {"\u0936\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u090B")}
+            >
+              {"\u090B"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u094D")}
+            >
+              {"\u094D"}
+            </div>
             <div className="button" onClick={() => this.backspace()}>
               <i class="fas fa-backspace"></i>
             </div>
@@ -158,11 +388,19 @@ class HindiKeyboard extends React.Component {
             <div className="end-button">
               <i class="fas fa-globe fa-2x"></i>
             </div>
-            <div className="spacebar">
+            <div
+              className="spacebar"
+              onClick={() => this.onButtonClick("\u0020")}
+            >
               {"\u0939\u093F\u0928\u094D\u0926\u0940"}
             </div>
             <div className="end-button">{"double sided arrow"}</div>
-            <div className="end-button">{"\u0964"}</div>
+            <div
+              className="end-button"
+              onClick={() => this.onButtonClick("\u0964")}
+            >
+              {"\u0964"}
+            </div>
             <div className="button-search">
               <i class="fas fa-search fa-2x"></i>
             </div>
@@ -175,70 +413,310 @@ class HindiKeyboard extends React.Component {
       return (
         <TaskContainer>
           <div className="row">
-            <div className="button">{"\u091C\u094D\u091E"}</div>
-            <div className="button">{"\u0924\u094D\u0930"}</div>
-            <div className="button">{"\u0938\u094D\u091F"}</div>
-            <div className="button">{"\u0938\u094D\u0924"}</div>
-            <div className="button">{"\u0919"}</div>
-            <div className="button">{"\u091E"}</div>
-            <div className="button">{"\u0936\u094D\u0930"}</div>
-            <div className="button">{"\u0915\u094D\u0930"}</div>
-            <div className="button">{"\u0917\u094D\u0930"}</div>
-            <div className="button">{"\u0926\u094D\u0930"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091C\u094D\u091E")}
+            >
+              {"\u091C\u094D\u091E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u0930")}
+            >
+              {"\u0924\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0938\u094D\u091F")}
+            >
+              {"\u0938\u094D\u091F"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0938\u094D\u0924")}
+            >
+              {"\u0938\u094D\u0924"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0919")}
+            >
+              {"\u0919"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u091E")}
+            >
+              {"\u091E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0936\u094D\u0930")}
+            >
+              {"\u0936\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0915\u094D\u0930")}
+            >
+              {"\u0915\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0917\u094D\u0930")}
+            >
+              {"\u0917\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0926\u094D\u0930")}
+            >
+              {"\u0926\u094D\u0930"}
+            </div>
           </div>
 
           <div className="row">
-            <div className="button">{"\u0927\u094D\u0930"}</div>
-            <div className="button">{"\u092A\u094D\u0930"}</div>
-            <div className="button">{"\u092C\u094D\u0930"}</div>
-            <div className="button">{"\u092D\u094D\u0930"}</div>
-            <div className="button">{"\u092E\u094D\u0930"}</div>
-            <div className="button">{"\u092B\u094D\u0930"}</div>
-            <div className="button">{"\u0935\u094D\u0930"}</div>
-            <div className="button">{"\u0915\u094D\u0924"}</div>
-            <div className="button">{"\u0924\u094D\u0924"}</div>
-            <div className="button">{"\u0939\u094D\u092E"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0927\u094D\u0930")}
+            >
+              {"\u0927\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092A\u094D\u0930")}
+            >
+              {"\u092A\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092C\u094D\u0930")}
+            >
+              {"\u092C\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092D\u094D\u0930")}
+            >
+              {"\u092D\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092E\u094D\u0930")}
+            >
+              {"\u092E\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092B\u094D\u0930")}
+            >
+              {"\u092B\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0935\u094D\u0930")}
+            >
+              {"\u0935\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0915\u094D\u0924")}
+            >
+              {"\u0915\u094D\u0924"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u0924")}
+            >
+              {"\u0924\u094D\u0924"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0939\u094D\u092E")}
+            >
+              {"\u0939\u094D\u092E"}
+            </div>
           </div>
 
           <div className="row">
-            <div className="button">{"\u0930\u094D\u0930"}</div>
-            <div className="button">{"\u0938\u094D\u0930"}</div>
-            <div className="button">{"\u0939\u094D\u0930"}</div>
-            <div className="button">{"\u0930\u094D\u0915"}</div>
-            <div className="button">{"\u0930\u094D\u0917"}</div>
-            <div className="button">{"\u0930\u094D\u091A"}</div>
-            <div className="button">{"\u0930\u094D\u091C"}</div>
-            <div className="button">{"\u0930\u094D\u0924"}</div>
-            <div className="button">{"\u0930\u094D\u0925"}</div>
-            <div className="button">{"\u0930\u094D\u0926"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0930")}
+            >
+              {"\u0930\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0938\u094D\u0930")}
+            >
+              {"\u0938\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0939\u094D\u0930")}
+            >
+              {"\u0939\u094D\u0930"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0915")}
+            >
+              {"\u0930\u094D\u0915"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0917")}
+            >
+              {"\u0930\u094D\u0917"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u091A")}
+            >
+              {"\u0930\u094D\u091A"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u091C")}
+            >
+              {"\u0930\u094D\u091C"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0924")}
+            >
+              {"\u0930\u094D\u0924"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0925")}
+            >
+              {"\u0930\u094D\u0925"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0926")}
+            >
+              {"\u0930\u094D\u0926"}
+            </div>
           </div>
 
           <div className="row">
-            <div className="button">{"\u0930\u094D\u0928"}</div>
-            <div className="button">{"\u0930\u094D\u092E"}</div>
-            <div className="button">{"\u0930\u094D\u0936"}</div>
-            <div className="button">{"\u0930\u094D\u0937"}</div>
-            <div className="button">{"\u0930\u094D\u0938"}</div>
-            <div className="button">{"\u0930\u094D\u092A"}</div>
-            <div className="button">{"\u0924\u094D\u0925"}</div>
-            <div className="button">{"\u0924\u094D\u0928"}</div>
-            <div className="button">{"\u0924\u094D\u092E"}</div>
-            <div className="button">{"\u0924\u094D\u092F"}</div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0928")}
+            >
+              {"\u0930\u094D\u0928"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u092E")}
+            >
+              {"\u0930\u094D\u092E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0936")}
+            >
+              {"\u0930\u094D\u0936"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0937")}
+            >
+              {"\u0930\u094D\u0937"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u0938")}
+            >
+              {"\u0930\u094D\u0938"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0930\u094D\u092A")}
+            >
+              {"\u0930\u094D\u092A"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u0925")}
+            >
+              {"\u0924\u094D\u0925"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u0928")}
+            >
+              {"\u0924\u094D\u0928"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u092E")}
+            >
+              {"\u0924\u094D\u092E"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u092F")}
+            >
+              {"\u0924\u094D\u092F"}
+            </div>
           </div>
 
           <div className="row">
             <div className="button" onClick={() => this.switchLayout(3)}>
               {"2/4"}
             </div>
-            <div className="button">{"\u0924\u094D\u0935"}</div>
-            <div className="button">{"\u0926\u094D\u0926"}</div>
-            <div className="button">{"\u0927\u094D\u0926"}</div>
-            <div className="button">{"\u092C\u094D\u0926"}</div>
-            <div className="button">{"\u092D\u094D\u0926"}</div>
-            <div className="button">{"\u092E\u094D\u0926"}</div>
-            <div className="button">{"\u0935\u094D\u0926"}</div>
-            <div className="button">{"\u0926\u0943"}</div>
-            <div className="button">
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0924\u094D\u0935")}
+            >
+              {"\u0924\u094D\u0935"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0926\u094D\u0926")}
+            >
+              {"\u0926\u094D\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0927\u094D\u0926")}
+            >
+              {"\u0927\u094D\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092C\u094D\u0926")}
+            >
+              {"\u092C\u094D\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092D\u094D\u0926")}
+            >
+              {"\u092D\u094D\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u092E\u094D\u0926")}
+            >
+              {"\u092E\u094D\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0935\u094D\u0926")}
+            >
+              {"\u0935\u094D\u0926"}
+            </div>
+            <div
+              className="button"
+              onClick={() => this.onButtonClick("\u0926\u0943")}
+            >
+              {"\u0926\u0943"}
+            </div>
+            <div className="button" onClick={() => this.backspace()}>
               <i class="fas fa-backspace"></i>
             </div>
           </div>
@@ -254,11 +732,19 @@ class HindiKeyboard extends React.Component {
             <div className="end-button">
               <i class="fas fa-globe fa-2x"></i>
             </div>
-            <div className="spacebar">
+            <div
+              className="spacebar"
+              onClick={() => this.onButtonClick("\u0020")}
+            >
               {"\u0939\u093F\u0928\u094D\u0926\u0940"}
             </div>
             <div className="end-button">{"double sided arrow"}</div>
-            <div className="end-button">{"\u0964"}</div>
+            <div
+              className="end-button"
+              onClick={() => this.onButtonClick("\u0964")}
+            >
+              {"\u0964"}
+            </div>
             <div className="button-search">
               <i class="fas fa-search fa-2x"></i>
             </div>
@@ -334,7 +820,7 @@ class HindiKeyboard extends React.Component {
             <div className="button">{"\u0937\u094D\u0923"}</div>
             <div className="button">{"\u0937\u094D\u092A"}</div>
             <div className="button">{"\u0937\u094D\u0915"}</div>
-            <div className="button">
+            <div className="button" onClick={() => this.backspace()}>
               <i class="fas fa-backspace"></i>
             </div>
           </div>
@@ -350,11 +836,19 @@ class HindiKeyboard extends React.Component {
             <div className="end-button">
               <i class="fas fa-globe fa-2x"></i>
             </div>
-            <div className="spacebar">
+            <div
+              className="spacebar"
+              onClick={() => this.onButtonClick("\u0020")}
+            >
               {"\u0939\u093F\u0928\u094D\u0926\u0940"}
             </div>
             <div className="end-button">{"double sided arrow"}</div>
-            <div className="end-button">{"\u0964"}</div>
+            <div
+              className="end-button"
+              onClick={() => this.onButtonClick("\u0964")}
+            >
+              {"\u0964"}
+            </div>
             <div className="button-search">
               <i class="fas fa-search fa-2x"></i>
             </div>
@@ -430,7 +924,7 @@ class HindiKeyboard extends React.Component {
             <div className="button">{"\u093D"}</div>
             <div className="button">{"\u0965"}</div>
             <div className="button">{"\u0950"}</div>
-            <div className="button">
+            <div className="button" onClick={() => this.backspace()}>
               <i class="fas fa-backspace"></i>
             </div>
           </div>
@@ -446,11 +940,19 @@ class HindiKeyboard extends React.Component {
             <div className="end-button">
               <i class="fas fa-globe fa-2x"></i>
             </div>
-            <div className="spacebar">
+            <div
+              className="spacebar"
+              onClick={() => this.onButtonClick("\u0020")}
+            >
               {"\u0939\u093F\u0928\u094D\u0926\u0940"}
             </div>
             <div className="end-button">{"double sided arrow"}</div>
-            <div className="end-button">{"\u0964"}</div>
+            <div
+              className="end-button"
+              onClick={() => this.onButtonClick("\u0964")}
+            >
+              {"\u0964"}
+            </div>
             <div className="button-search">
               <i class="fas fa-search fa-2x"></i>
             </div>
@@ -499,7 +1001,7 @@ class HindiKeyboard extends React.Component {
             <div className="button">{";"}</div>
             <div className="button">{"!"}</div>
             <div className="button">{"?"}</div>
-            <div className="button">
+            <div className="button" onClick={() => this.backspace()}>
               <i class="fas fa-backspace"></i>
             </div>
           </div>
@@ -510,7 +1012,10 @@ class HindiKeyboard extends React.Component {
             </div>
             <div className="button">{","}</div>
             <div className="button">{" 1234"}</div>
-            <div className="spacebar">
+            <div
+              className="spacebar"
+              onClick={() => this.onButtonClick("\u0020")}
+            >
               {"\u0939\u093F\u0928\u094D\u0926\u0940"}
             </div>
             <div className="button">{"."}</div>
