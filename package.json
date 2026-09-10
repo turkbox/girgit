@@ -11,7 +11,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-password-strength": "^2.4.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.1.1"
   },
   "scripts": {
@@ -44,7 +44,7 @@
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
-    "@storybook/react": "^5.3.19",
+    "@storybook/react": "^10.6.0",
     "@storybook/storybook-deployer": "^2.8.6"
   }
 }
